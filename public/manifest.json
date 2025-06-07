@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Click Counter",
+  "name": "Simple React App To Count Clicks",
   "icons": [
     {
       "src": "favicon.ico",
