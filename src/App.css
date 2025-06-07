@@ -1,3 +1,42 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+.app {
+  font-family: 'Press Start 2P';
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  transition: background-color 0.3s;
+}
+
+.app:active {
+  background-color: #e0e0e0;
+}
+
+.counter-display {
   text-align: center;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 24px;
+  color: #666;
+}
+
+button {
+  font-size: 16px;
+  font-family: 'Press Start 2P';
+  padding: 16px;
+  border-radius: 8px;
 }
