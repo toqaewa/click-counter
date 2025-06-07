@@ -7,13 +7,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
+  cursor: url('./cursors/cursor-alt-svgrepo-com.svg'), pointer;
   background-color: #f0f0f0;
   transition: background-color 0.3s;
 }
 
 .app:active {
   background-color: #e0e0e0;
+  cursor: url('./cursors/cursor-click-svgrepo-com.svg'), pointer;
 }
 
 .counter-display {
@@ -39,4 +40,5 @@ button {
   font-family: 'Press Start 2P';
   padding: 16px;
   border-radius: 8px;
+  cursor: pointer;
 }
