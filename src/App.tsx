@@ -1,6 +1,20 @@
 import React, { useState } from 'react';
 import './App.css';
 
+const ALERTS = [
+  "КРУТО!",
+  "ВАУ!",
+  "ПРОДОЛЖАЙ КЛИКАТЬ!",
+  "ВОТ ЭТО РЕЗУЛЬТАТ!",
+  "КРУТО!",
+  "ВАУ!",
+  "ПРОДОЛЖАЙ КЛИКАТЬ!",
+  "ВОТ ЭТО РЕЗУЛЬТАТ!",
+  "КРУТО!",
+  "ВАУ!",
+  "ПРОДОЛЖАЙ КЛИКАТЬ!",
+]
+
 const App: React.FC = () => {
   const [count, setCount] = useState<number>(0);
   const [randCriteria, setRandCriteria] = useState<number>(0);
@@ -23,13 +37,13 @@ const App: React.FC = () => {
 
   return (
     <div className="app" onClick={handleClick}>
-      <div className="counter-display">
-        <h1>Счетчик кликов</h1>
-        <p>Кликов: {count}</p>
-        <button onClick={handleReset}>Сбросить счетчик</button>
-        {
-          alert && <div style={{ color: "red" }}>ALERT!!!</div>
-        }
+      <h1>Счетчик кликов</h1>
+      <p>Кликов: {count} {count === 69 && 'NICE'}</p>
+      <button onClick={handleReset}>Сбросить счетчик</button>
+      <div style={{ height: "1px" }}>
+      {
+        alert && <div className='alert'>{ALERTS[Math.floor(Math.random() * 11)]}</div>
+      }
       </div>
     </div>
   );

@@ -5,6 +5,7 @@
   width: 100vw;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   cursor: url('./cursors/cursor-alt-svgrepo-com.svg'), pointer;
@@ -15,14 +16,6 @@
 .app:active {
   background-color: #e0e0e0;
   cursor: url('./cursors/cursor-click-svgrepo-com.svg'), pointer;
-}
-
-.counter-display {
-  text-align: center;
-  padding: 20px;
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
@@ -49,4 +42,9 @@ button, button:active, button:focus {
 
 button:active {
   transform: scale(0.98);
+}
+
+.alert {
+  padding: 20px;
+  color: red;
 }
