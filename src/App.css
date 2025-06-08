@@ -35,10 +35,18 @@ p {
   color: #666;
 }
 
-button {
+button, button:active, button:focus {
   font-size: 16px;
   font-family: 'Press Start 2P';
   padding: 16px;
   border-radius: 8px;
+  border: 1px solid red;
   cursor: pointer;
+  outline: none !important;
+  box-shadow: none !important;
+  background-color: inherit;
+}
+
+button:active {
+  transform: scale(0.98);
 }
